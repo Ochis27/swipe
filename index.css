@@ -11,7 +11,7 @@
   --primary-button-hover: #6d7a88;
   --body-font: "Roboto", sans-serif;
   --heading-font: "Anek Telugu", sans-serif;
-  --h1-size: 94px;
+  --h1-size: 64px;
   --h1-height: 108px;
   --h2-size: 50px;
   --h2-height: 75px;
@@ -112,7 +112,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   padding: var(--spacing-sm) 0 0 0;
-  background-color: var(--purple-one);
+  background-color: var(--bg-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -257,4 +257,49 @@ body {
 .section-container {
   width: 100%;
   max-width: var(--standard-width);
+}
+
+/* HERO STYLES */
+main {
+  margin: var(--spacing-xl) 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  margin: var(--spacing-md) 0;
+}
+
+.button-container button:nth-of-type(2) {
+  margin: 0 0 0 var(--spacing-md);
+  color: var(--purple-two);
+}
+
+.hero p {
+  max-width: 480px;
+}
+
+.hero .hero-phone-container {
+  height: 564px;
+  align-items: flex-end;
+}
+
+.hero-phone {
+  height: 628px;
+  transform: translate(32px, -32px);
+}
+
+/* Partners section */
+.partners-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: var(--spacing-xl) 0;
+  column-gap: var(--spacing-md);
+  row-gap: var(--spacing-lg);
+}
+
+.partners-grid img {
+  height: 60px;
+  place-self: center;
 }
